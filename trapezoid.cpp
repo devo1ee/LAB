@@ -11,6 +11,11 @@ double square(double a, double b, double h){
     return 0;
 }
 
+double midline(double a, double b){
+    cout<<"Средняя линия равна: "<<0.5*(a+b)<<endl;
+    return 0;
+}
+
 int main()
 {
     double osn1, osn2, side1, side2, h;
@@ -35,6 +40,7 @@ int main()
     
     perimeter(osn1, osn2, side1, side2);
     square(osn1, osn2, h);
+    midline(osn1, osn2);
 
     return 0;
 }
