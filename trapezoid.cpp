@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+double perimeter(double a, double b, double c, double d){
+    cout<<"Периметр трапеции равен: "<<a+b+c+d<<endl;
+    return 0;
+}
+
+double square(double a, double b, double h){
+    cout<<"Площадь трапеции равна: "<<0.5*(a+b)*h<<endl;
+    return 0;
+}
+
+int main()
+{
+    double osn1, osn2, side1, side2, h;
+    cout<<"Введите длины оснований трапеции:"<<endl;
+    cin>>osn1>>osn2;
+    while (osn1<=0 || osn2<=0){
+        cout<<"Введите корректные длины оснований:"<<endl;
+        cin>>osn1>>osn2;
+    }
+    cout<<"Введите длины боковых сторон трапеции:"<<endl;
+    cin>>side1>>side2;
+    while (side1<=0 || side2<=0){
+        cout<<"Введите корректные длины боковых сторон:"<<endl;
+        cin>>side1>>side2;
+    }
+    cout<<"Введите длину высоты трапеции:"<<endl;
+    cin>>h;
+    while (h<=0){
+        cout<<"Введите корректную длину высоты:"<<endl;
+        cin>>h;
+    }
+    
+    perimeter(osn1, osn2, side1, side2);
+    square(osn1, osn2, h);
+
+    return 0;
+}
