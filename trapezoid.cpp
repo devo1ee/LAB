@@ -22,18 +22,24 @@ int main()
     cout<<"Введите длины оснований трапеции:"<<endl;
     cin>>osn1>>osn2;
     while (osn1<=0 || osn2<=0){
+        cin.clear();
+        cin.ignore(100, '\n');
         cout<<"Введите корректные длины оснований:"<<endl;
         cin>>osn1>>osn2;
     }
     cout<<"Введите длины боковых сторон трапеции:"<<endl;
     cin>>side1>>side2;
     while (side1<=0 || side2<=0){
+        cin.clear();
+        cin.ignore(100, '\n');
         cout<<"Введите корректные длины боковых сторон:"<<endl;
         cin>>side1>>side2;
     }
     cout<<"Введите длину высоты трапеции:"<<endl;
     cin>>h;
     while (h<=0){
+        cin.clear();
+        cin.ignore(100, '\n');
         cout<<"Введите корректную длину высоты:"<<endl;
         cin>>h;
     }
