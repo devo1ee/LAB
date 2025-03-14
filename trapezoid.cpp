@@ -35,6 +35,10 @@ int main()
         cout<<"Введите корректные длины боковых сторон:"<<endl;
         cin>>side1>>side2;
     }
+    if (osn1+osn2+side1<side2 || osn1+osn2+side2<side1 || osn1+side1+side2<osn2 || osn2+side1+side2<osn1){
+        cout<<"У вас трапеция не существует, начинайте заново)"<<endl;
+        return 0;
+    }
     cout<<"Введите длину высоты трапеции:"<<endl;
     cin>>h;
     while (h<=0){
